@@ -1,73 +1,86 @@
-*{
-    margin:0;
-    padding: 0;
-    
-}
-body{
-    background:  url(aurora-borealis-g09bc8bafb_1920.jpg );
-    color: beige;
+html,input{
+    font-family: sans-serif;
 }
 
-#nav{
-    display:flex;
-    align-items: center;
+body{
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 2em;
 }
-#logo{
-    margin: 10px 0px;
-}
-#logo img{
-    margin: 10px 30px;
-    height: 100px;
-    width: 80px;
-    filter: invert();
+
+.headerContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: tomato;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 form{
-    
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding: auto;
+    margin-top: 50px;
 }
- #alphamid{
-    display:block;
-    margin:10px 20px;
-    padding: auto;
-    border: dotted white 2px;
-    border-radius: 20px;
-} 
-.main{
-    display: flex;
-    justify-content: center;
-}
-.mid{
-    display: flex;
-margin: 10px 20px;
-padding: 10px;
-justify-content: center;
 
+div{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+label,input,button{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+label {
+    text-align: right;
+    width: 30%;
+    margin-right: 2%;
+}
+
 input{
-    font-size: 14px;
+    flex: auto;
 }
-input:hover{
-    font-weight: bold;
-    cursor: pointer;
-}
-.submit{
+
+button{
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 0 auto;
 }
-.submit button{
-    display: flex;
-margin: 10px 20px;
-padding: 10px;
-justify-content: center;
-font-size: 0.8rem;
-border-radius: 10px;
+
+error-output{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
-.submit button:hover{
-    font-weight: bolder;
-    background-color: blueviolet;
-    cursor: pointer;
+
+@media only screen and (max-width:320px)
+{
+    h1
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+    label
+    {
+        width: 30%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:240px)
+{
+    
+    label
+    {
+        width: 30%;
+        font-size: 11px;
+    }
+    input
+    {
+        width: 11px;
+    }
 }
